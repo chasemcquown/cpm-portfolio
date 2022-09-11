@@ -282,3 +282,207 @@
     border: 5px solid var(--foam);
     color: var(--foam);
   }
+
+// BORDER FILL IN BUTTON STYLING
+@mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+    box-shadow: inset 0 0 0 $width $color;
+    color: $color;
+    transition: color $duration $duration/3;
+    position: relative;
+    
+    &::before,
+    &::after {
+      border: 0 solid transparent;
+      box-sizing: border-box;
+      content: '';
+      pointer-events: none;
+      position: absolute;
+      width: 0; height: 0;
+      
+      #{$vertical}: 0; 
+      #{$horizontal}: 0;
+    }
+  
+    &::before {
+      $h-side: if($horizontal == 'left', 'right', 'left');
+      
+      border-#{$vertical}-width: $width;
+      border-#{$h-side}-width: $width;
+    }
+    
+    &::after {
+      $v-side: if($vertical == 'top', 'bottom', 'top');
+      
+      border-#{$v-side}-width: $width;
+      border-#{$horizontal}-width: $width;
+    }
+    
+    &:hover {
+      color: $hover;
+      
+      &::before,
+      &::after {
+        border-color: $hover;
+        transition: border-color 0s, width $duration, height $duration;
+        width: 100%;
+        height: 100%;
+      }
+      
+      &::before { transition-delay: 0s, 0s, $duration; }
+      
+      &::after { transition-delay: 0s, $duration, 0s; }
+    }
+  }
+  
+  .draw-border {
+    @include btn-border-drawing(#91C4D9, white, 5px, bottom, right);
+  }
+  
+  //=== Button styling, semi-ignore
+  .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: bold 1.6rem 'Prompt', sans-serif;
+    padding: 1em 2em;
+    margin-top: 2%;
+    width: 100%;
+    letter-spacing: 0.05rem;
+    
+    &:focus { outline: 2px dotted #91C4D9; }
+  }
+
+  // Animate the size, inside
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+// Animate the size, outside
+.pulse:hover, 
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+
+// Stack multiple shadows, one from the left, the other from the right
+.close:hover,
+.close:focus {
+  box-shadow: 
+    inset -3.5em 0 0 0 var(--hover),
+    inset 3.5em 0 0 0 var(--hover);  
+}
+
+// Size can also be negative; see how it's smaller than the element
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+// Animating from the bottom
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+// And from the left
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+// Multiple shadows, one on the outside, another on the inside
+.offset {  
+  box-shadow: 
+    0.3em 0.3em 0 0 var(--color),
+    inset 0.3em 0.3em 0 0 var(--color);
+  
+  &:hover,
+  &:focus {
+    box-shadow: 
+      0 0 0 0 var(--hover),
+      inset 6em 3.5em 0 0 var(--hover);
+  }
+}
+
+
+
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  section::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 80%;
+    background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  }
+  section h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font : normal 300 64px/1 'Josefin Sans', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+#section05 a {
+    padding-top: 70px;
+  }
+  #section05 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 5px solid var(--foam);
+    border-bottom: 5px solid var(--foam);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb05 1.5s infinite;
+    animation: sdb05 1.5s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb05 {
+    0% {
+      -webkit-transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
+  @keyframes sdb05 {
+    0% {
+      transform: rotate(-45deg) translate(0, 0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(-45deg) translate(-20px, 20px);
+      opacity: 0;
+    }
+  }
