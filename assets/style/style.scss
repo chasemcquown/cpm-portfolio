@@ -413,3 +413,43 @@
     
     &:focus { outline: 2px dotted #91C4D9; }
   }
+
+//   MOBILE MEDIA QUERIES
+  @media only screen and (min-width: 320px) and (max-width: 480px){
+
+    body {
+        /* HERO STYLES */
+        .hero-div {
+            color: white;
+            margin: 80px 0px 200px 0px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-child {
+            justify-content: flex-start;
+            width: 80%;
+        }
+
+        .hero-child a {
+            text-decoration: none;
+        }
+
+        .hero-child h2:nth-child(1) {
+            font-weight: 100;
+            font-size: 20px;
+        }
+
+        .hero-child h2:nth-child(2) {
+            font-weight: 200;
+            font-size: 25px;
+        }
+
+        .btn, .btn-2, .draw-border, .draw-border-2 {
+            font-size: 15px;
+        }
+    }
+
+  }

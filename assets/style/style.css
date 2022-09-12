@@ -377,4 +377,36 @@ footer {
 }
 .btn-2:focus {
   outline: 2px dotted #91C4D9;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    /* HERO STYLES */
+  }
+  body .hero-div {
+    color: white;
+    margin: 80px 0px 200px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .hero-child {
+    justify-content: flex-start;
+    width: 80%;
+  }
+  body .hero-child a {
+    text-decoration: none;
+  }
+  body .hero-child h2:nth-child(1) {
+    font-weight: 100;
+    font-size: 20px;
+  }
+  body .hero-child h2:nth-child(2) {
+    font-weight: 200;
+    font-size: 25px;
+  }
+  body .btn, body .btn-2, body .draw-border, body .draw-border-2 {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
