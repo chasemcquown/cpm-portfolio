@@ -407,11 +407,11 @@ footer {
   }
   body .hero-child h2:nth-child(1) {
     font-weight: 100;
-    font-size: 20px;
+    font-size: 23px;
   }
   body .hero-child h2:nth-child(2) {
     font-weight: 200;
-    font-size: 25px;
+    font-size: 28px;
   }
   body .btn, body .btn-2, body .draw-border, body .draw-border-2 {
     font-size: 15px;
@@ -447,17 +447,18 @@ footer {
     flex-direction: column;
   }
   body .project-text h3 {
-    font-size: 20px;
+    font-size: 23px;
     margin-bottom: 10px;
   }
 
   body .project-text p {
-    font-size: 15px;
+    font-size: 18px;
   }
   
   /* FOOTER STYLES - MOBILE */
   body footer {
     background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
     border-top: none;
   }
 
@@ -473,6 +474,7 @@ footer {
 
   .wrapper header {
     display: contents;
+    background-color: var(--secondary-color);
   }
 
   .wrapper{
@@ -482,11 +484,11 @@ footer {
     height: 100vh;
     margin: 0 auto;
     width: 100%;
-    padding-top: 2em;
+    /* padding-top: 2em; */
   }
 
-  .main-header {
-    background-color: rgba(0, 0, 0, 0.1);
+  .main-header nav {
+    padding-top: 2em;
   }
 
   .masthead{
@@ -497,11 +499,13 @@ footer {
   }
 
   .masthead h1{
+    color: white;
       font-weight: lighter;
-      font-size: 1.5em;
+      font-size: 2em;
   }
 
   .main-header a{
+    color: white;
       font-family: 'Prompt', 'Sans Serif';
       letter-spacing: 3px;
       margin-left: 15px;
@@ -519,14 +523,9 @@ footer {
       margin-right: 15px;
   }
 
-  .burger::after {
-    background-color: var(--secondary-color);
-  }
-
   .burger div{
-      background-color: var(--foam);
+      background-color: var(--secondary-color);
       border-radius: 25px;
-      box-shadow: 1px .4px 10px rgba(0,0,0,.4);
       height: 2.3px;
       transition-duration: .25s;
       transition-timing-function: cubic-bezier(.6,.13,.32,1.46);
