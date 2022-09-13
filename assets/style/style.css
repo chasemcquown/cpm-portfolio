@@ -440,23 +440,13 @@ footer {
   }
   body .project-text h3 {
     font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 2%;
-  }
-  body .project-text h3 em {
-    font-weight: 100;
-  }
-  body .project-text p {
-    font-size: 15px;
-    font-weight: 300;
-  }
-  body .project-text span {
-    font-weight: 100;
-  }
-  body .project-text a {
-    text-decoration: none;
+    margin-bottom: 10px;
   }
 
+  body .project-text p {
+    font-size: 15px;
+  }
+  
   /* FOOTER STYLES - MOBILE */
   .right-foot a i {
     margin-top: 10px;
