@@ -40,11 +40,6 @@ body {
 }
 
 /* NAVIGATION STYLES */
-
-/* .topnav {
-  display: none;
-} */
-
 .wrapper header {
   display: none;
 }
@@ -510,7 +505,7 @@ footer {
 
   .main-header a:hover,
   .active{
-      color: #91C4D9;
+      color: var(--foam);
   }
 
   .burger{
@@ -520,11 +515,15 @@ footer {
       margin-right: 15px;
   }
 
+  .burger::after {
+    background-color: var(--secondary-color);
+  }
+
   .burger div{
-      background-color: #91C4D9;
+      background-color: var(--foam);
       border-radius: 25px;
       box-shadow: 1px .4px 10px rgba(0,0,0,.4);
-      height: 3px;
+      height: 2.3px;
       transition-duration: .25s;
       transition-timing-function: cubic-bezier(.6,.13,.32,1.46);
   }
@@ -536,7 +535,7 @@ footer {
 
   .main-nav-list{
       z-index: 999;
-      background-color: #2477BF;
+      background-color: var(--secondary-color);
       position: fixed;
       width: 100%;
       padding: 4%;
@@ -603,13 +602,14 @@ footer {
   }
 
   #input__menu-toggle:checked ~ .masthead .burger .three{
+      background-color: var(--secondary-color);
       box-shadow: 1px .4px 10px rgba(0,0,0,.25);
       transform-origin: left;
       transform: translate(14%, 2px) rotate(-45deg); 
   }
 
   #input__menu-toggle:checked ~.main-nav-list{
-  /*      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.14); */
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.14);
       transform:scale(1,1);
   }
 
@@ -620,51 +620,4 @@ footer {
       transition-delay: .2s;
       transition-duration: .1s;
   }
-
-  /* body header {
-    display: none;
-  }
-
-  body .topnav {
-    display: contents;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  body .topnav #myLinks {
-    display: none;
-  }
-
-  body #myLinks a {
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 20px;
-  }
-  
-  body .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: lighter;
-    display: block;
-  }
-  
-  body .topnav a.icon {
-    background: none;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  body .topnav a:hover {
-    background-color: none;
-    color: white;
-  }
-  
-  body .active {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-  } */
-  
 }/*# sourceMappingURL=style.css.map */
