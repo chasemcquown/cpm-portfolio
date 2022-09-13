@@ -475,13 +475,14 @@ footer {
 
   body #myLinks a {
     background-color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
   }
   
   body .topnav a {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 30px;
     font-weight: lighter;
     display: block;
   }
