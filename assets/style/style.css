@@ -462,6 +462,10 @@ footer {
     border-top: none;
   }
 
+  body footer p {
+    color: white;
+  }
+
   body .right-foot a i {
     margin-top: 10px;
   }
@@ -556,36 +560,6 @@ footer {
       transition-property: opacity;
       opacity: 0;
       transition-duration: .15s;
-  }
-
-
-  .main-contents{
-      flex: auto;
-  }
-
-  .main-contents h2,
-  p{
-      margin-bottom: 1em;
-  }
-
-  .main-contents p{
-      font-size: 1.2em;
-  }
-
-  .main-contents em{
-      font-weight: 100;
-  }
-
-  .main-contents a{
-      color: rgb(170, 253, 230);
-  }
-
-  .main-footer{
-      font-size: .9em;
-      letter-spacing: 3px;
-      margin-bottom: 1.5em;
-      text-align: center;
-      text-transform: uppercase;
   }
 
   .menu-toggle{
