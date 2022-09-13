@@ -385,8 +385,9 @@ footer {
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   body {
-    /* HERO STYLES */
+    
   }
+
   body .hero-div {
     color: white;
     margin: 80px 0px 100px 0px;
@@ -421,7 +422,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     color: white;
-    background: linear-gradient(180deg, rgba(36, 119, 191, 0.7) 0%, rgba(0, 0, 0, 0.5) 0%, rgba(36, 119, 191, 0.7) 100%);
+    background: none;
   }
   body .project {
     width: 100%;
@@ -453,6 +454,11 @@ footer {
   }
   
   /* FOOTER STYLES - MOBILE */
+  body footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: none;
+  }
+
   body .right-foot a i {
     margin-top: 10px;
   }
