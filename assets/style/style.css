@@ -125,7 +125,6 @@ header nav ul li a:hover {
   justify-content: center;
   flex-direction: column;
   color: white;
-  /* background: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(36,119,191,0.4) 0%, rgba(0,0,0,0.3) 95%); */
   background: linear-gradient(180deg, rgba(36, 119, 191, 0.7) 0%, rgba(0, 0, 0, 0.5) 0%, rgba(36, 119, 191, 0.7) 100%);
 }
 
@@ -385,7 +384,7 @@ footer {
   }
   body .hero-div {
     color: white;
-    margin: 80px 0px 200px 0px;
+    margin: 80px 0px 100px 0px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -408,5 +407,58 @@ footer {
   }
   body .btn, body .btn-2, body .draw-border, body .draw-border-2 {
     font-size: 15px;
+  }
+  body .parent-project-container {
+    width: 100%;
+    padding: 50px 15px 150px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient(180deg, rgba(36, 119, 191, 0.7) 0%, rgba(0, 0, 0, 0.5) 0%, rgba(36, 119, 191, 0.7) 100%);
+  }
+  body .project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+  }
+  body .project-image {
+    width: 100%;
+    text-align: center;
+  }
+  body .project-image img {
+    width: 50%;
+  }
+  body .project-text {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  body .project-text h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2%;
+  }
+  body .project-text h3 em {
+    font-weight: 100;
+  }
+  body .project-text p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  body .project-text span {
+    font-weight: 100;
+  }
+  body .project-text a {
+    text-decoration: none;
+  }
+
+  /* FOOTER STYLES - MOBILE */
+  .right-foot a i {
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

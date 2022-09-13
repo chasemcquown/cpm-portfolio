@@ -124,7 +124,6 @@
     justify-content: center;
     flex-direction: column;
     color: white;
-    /* background: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(36,119,191,0.4) 0%, rgba(0,0,0,0.3) 95%); */
     background: linear-gradient(180deg, rgba(36,119,191,0.7) 0%, rgba(0,0,0,0.5) 0%, rgba(36,119,191,0.7) 100%);
   }
 
@@ -450,6 +449,7 @@
         .btn, .btn-2, .draw-border, .draw-border-2 {
             font-size: 15px;
         }
+
     }
 
   }
