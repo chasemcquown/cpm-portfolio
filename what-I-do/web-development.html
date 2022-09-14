@@ -11,32 +11,61 @@
 </head>
 <body>
 
-    <video autoplay muted loop id="myVideo">
-        <source src="../assets/images-and-video/pexels-rostislav-uzunov-7385122.mp4" type="video/mp4">
-    </video>
+  <!-- BACKGROUND VIDEO -->
+  <video autoplay muted loop playsinline id="myVideo">
+    <source src="../assets/images-and-video/pexels-rostislav-uzunov-7385122.mp4" type="video/mp4">
+  </video>
 
-    <!-- NAVIGATION ELEMENTS -->
-    <header>
-        <h1>
-          <a href="../index.html">chase mcquown.</a>
-        </h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="../about-me.html">about me</a>
-            </li>
-            <li>
-              <a href="ux-ui.html">ux/ui</a>
-            </li>
-            <li>
-              <a href="web-development.html">web development</a>
-            </li>
-            <li>
-              <a href="digital-marketing.html">digital marketing</a>
-            </li>
-          </ul>
-        </nav>
-    </header>
+  <!-- NAVIGATION ELEMENTS -->
+  <header class="desktop-nav">
+      <h1>
+        <a href="../index.html">chase mcquown.</a>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="../about-me.html">about me</a>
+          </li>
+          <li>
+            <a href="ux-ui.html">ux/ui</a>
+          </li>
+          <li>
+            <a href="web-development.html">web development</a>
+          </li>
+          <li>
+            <a href="digital-marketing.html">digital marketing</a>
+          </li>
+        </ul>
+      </nav>
+  </header>
+
+  <!-- MOBILE NAV MENU -->
+  <div class="wrapper">
+      <header class="main-header">
+          <nav>
+              <input type="checkbox" name="" id="input__menu-toggle" class="menu-toggle">
+              <div class="masthead">
+                  <h1><a href="#0">chase mcquown.</a></h1>
+                  <label for="input__menu-toggle" class="label-for-menu">
+                      <div class="burger">
+                          <div class="one"></div>
+                          <div class="two"></div>
+                          <div class="three"></div>
+                      </div>
+                  </label>
+              </div>
+
+              <div class="main-nav-list">
+                  <ul>
+                      <li><a href="../index.html">home</a></li>
+                      <li><a href="../about-me.html">about me</a></li>
+                      <li><a href="ux-ui.html">ux/ui</a></li>
+                      <li><a href="web-development.html"  class="active">web development</a></li>
+                      <li><a href="digital-marketing.html">digital marketing</a></li>
+                  </ul>
+              </div>
+          </nav>
+      </header>
 
     <!-- HERO ELEMENTS -->
     <div class="hero-div">
