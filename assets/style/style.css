@@ -21,7 +21,7 @@ html {
 
 /* BACKGROUND VIDEO STYLES */
 #myVideo {
-  filter: brightness(20%);
+  filter: brightness(15%);
   width: 100vw;
   height: 100vh;
   -o-object-fit: cover;
@@ -179,6 +179,106 @@ body {
 
 .project-text a {
   text-decoration: none;
+}
+
+/* ABOUT ME */
+
+.about-me-intro {
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 40px;
+  font-size: 50px;
+}
+
+.persona-container {
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+}
+
+.top-row, .second-row, .bottom-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  margin-left: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.me {
+  display: flex;
+  justify-content: center;
+}
+
+.me img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 20%;
+}
+
+.goals-container {
+  width: 33%;
+  margin-left: 15px;
+  margin-right: 40px;
+}
+
+.personality-container, .interests-container, .influencers-container {
+  margin-top: 2%;
+}
+
+.name-container, .goals-container, .personality-container, .interests-container, .influencers-container {
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.7);
+  border-left: 5px solid rgba(0, 0, 0, 0.7);
+  border-top: 5px solid rgba(0, 0, 0, 0.7);
+  border-right: 5px solid var(--secondary-color);
+  border-bottom: 5px solid var(--secondary-color);
+  transition: .7s;
+}
+
+.name-container:hover, .goals-container:hover, .personality-container:hover, .interests-container:hover, .influencers-container:hover {
+  border-right: 5px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.7);
+  border-left: 5px solid var(--foam);
+  border-top: 5px solid var(--foam);
+}
+
+.name-container h1 h2 p li, .goals-container h1 h2 p li, .personality-container h1 h2 p li, .interests-container h1 h2 p li, .influencers-container h1 h2 p li {
+  color: white;
+}
+
+.influencers-container {
+  width: 99%;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20%;
+}
+
+.influencer-imgs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.ce img, .thrasher img, .gx1000 img {
+  width: 40%;
+}
+
+.personality-container {
+  width: 66%;
+  margin-left: 40px;
+}
+
+.interests-container {
+  width: 33%;
+  margin-left: 15px;
+  margin-right: 40px;
 }
 
 /* FOOTER STYLES */
@@ -488,7 +588,6 @@ footer {
     height: 100vh;
     margin: 0 auto;
     width: 100%;
-    /* padding-top: 2em; */
   }
 
   .main-header nav {
