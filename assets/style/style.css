@@ -183,11 +183,19 @@ body {
 
 /* ABOUT ME */
 
+#persona {
+  background: linear-gradient(180deg, rgba(36, 119, 191, 0.7) 0%, rgba(0, 0, 0, 0.5) 0%, rgba(36, 119, 191, 0.7) 100%);
+}
+
 .about-me-intro {
   text-align: center;
   margin-top: 10%;
   margin-left: 40px;
+  margin-right: 40px;
   font-size: 50px;
+  border-top: 5px solid var(--secondary-color);
+  border-right: 5px solid var(--secondary-color);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .persona-container {
@@ -233,19 +241,10 @@ body {
 
 .name-container, .goals-container, .personality-container, .interests-container, .influencers-container {
   padding: 25px;
-  background: rgba(0, 0, 0, 0.7);
-  border-left: 5px solid rgba(0, 0, 0, 0.7);
-  border-top: 5px solid rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   border-right: 5px solid var(--secondary-color);
   border-bottom: 5px solid var(--secondary-color);
   transition: .7s;
-}
-
-.name-container:hover, .goals-container:hover, .personality-container:hover, .interests-container:hover, .influencers-container:hover {
-  border-right: 5px solid rgba(0, 0, 0, 0.7);
-  border-bottom: 5px solid rgba(0, 0, 0, 0.7);
-  border-left: 5px solid var(--foam);
-  border-top: 5px solid var(--foam);
 }
 
 .name-container h1 h2 p li, .goals-container h1 h2 p li, .personality-container h1 h2 p li, .interests-container h1 h2 p li, .influencers-container h1 h2 p li {
@@ -279,6 +278,35 @@ body {
   width: 33%;
   margin-left: 15px;
   margin-right: 40px;
+}
+
+/* WHAT I DO */
+.what-i-do-parent {
+  padding-left: 40px;
+  padding-right: 40px;
+  background: linear-gradient(180deg, rgba(36, 119, 191, 0.7) 0%, rgba(0, 0, 0, 0.5) 0%, rgba(36, 119, 191, 0.7) 100%);
+}
+
+.what-i-do-child {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-container, .right-container {
+  display: flex;
+  width: 50%;
+}
+
+.left-container {
+  justify-content: center;
+}
+
+.left-container img {
+  width: 20%;
+}
+
+.right-container {
+  flex-direction: column;
 }
 
 /* FOOTER STYLES */
