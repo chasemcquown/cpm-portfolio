@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/style/style.css">
     <script src="https://kit.fontawesome.com/5889a5ec9f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -67,14 +68,60 @@
           </nav>
       </header>
 
-    <!-- HERO ELEMENTS -->
-    <div class="hero-div">
-        <div class="hero-child">
-            <h2 style="font-weight: bold;">coming soon...</h2>
-        </div>
-    </div>
+<!-- WHAT I DO -->
+<div class="what-i-do-intro">
+  <h1>Web Development - <span style="font-weight: lighter;">My Journey</span></h1>
+  <br>
+  <p>coming soon...</p>
+</div>
 
-    <!-- link to javascript file -->
-    <script src="../assets/script.js"></script>
+<!-- PROJECT ELEMENTS -->
+<div id="my-projects" class="parent-project-container">
+
+  <div class="project">
+    <div class="project-image" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+        <img src="../assets/images-and-video/barnabas-mock.png" alt="">
+    </div>
+    <div class="project-text" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+        <h3>Barnabas Connection - <em>web development & website redesign</em></h3>
+        <p>skills: <span>wireframing & web development</span></p>
+        <p>tools & technologies: <span>Wordpress, Trello, Slack</span></p>
+        <a href="https://www.barnabasconnects.org/" target="_blank"><button class="btn-2 draw-border-2" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">view project</button></a>
+    </div>
+  </div>
+
+  <div class="project">
+      <div class="project-image" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
+          <img src="../assets/images-and-video/simpleWX-mock.png" alt="">
+      </div>
+      <div class="project-text" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
+          <h3>SimpleWX - <em>a weather application</em></h3>
+          <p>skills: <span>wireframing, web development, hml, css, javascript</span></p>
+          <p>tools & technologies: <span>HTML5, CSS3, JavaScript, OpenWeather's API</span></p>
+          <a href="https://chasemcquown.github.io/simple-WX/" target="_blank"><button class="btn-2 draw-border-2" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">view project</button></a>
+      </div>
+  </div>
+
+</div>
+
+</section>
+
+<!-- FOOTER ELEMENTS -->
+<footer>
+  <div class="left-foot">
+      <p>Let's work.</p>
+      <p>cpmcquown@gmail.com</p>
+  </div>
+  <div class="right-foot"><a href="https://www.linkedin.com/in/chase-mcquown-607a78198/" target="_blank"><i class="fa-brands fa-linkedin fa-5x"></i></a></div>
+</footer>
+
+<!-- LINK TO SCROLL ANIMATIONS JS FILE -->
+<script src="https://unpkg.com/aos@next/dist/aos.js" type="text/javascript"></script>
+<script>
+    AOS.init();
+</script>
+
+<!-- link to javascript file -->
+<script src="../assets/script.js"></script>
 </body>
 </html>

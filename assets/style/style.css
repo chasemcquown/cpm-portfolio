@@ -21,7 +21,7 @@ html {
 
 /* BACKGROUND VIDEO STYLES */
 #myVideo {
-  filter: brightness(15%);
+  filter: brightness(10%);
   width: 100vw;
   height: 100vh;
   -o-object-fit: cover;
@@ -284,8 +284,7 @@ body {
 .what-i-do-intro {
   display: flex;
   flex-direction: column;
-  /* margin-top: 100px; */
-  padding: 40px;
+  padding: 60px 40px 40px 40px;
   background: linear-gradient(360deg, rgba(36, 119, 191, 0.7) 0%, rgba(0, 0, 0, 0.5) 0%, rgba(36, 119, 191, 0.7) 100%);
 }
 
@@ -295,6 +294,7 @@ body {
 
 .what-i-do-intro p {
   font-size: 25px;
+  font-weight: 200;
 }
 
 .what-i-do-parent {
