@@ -629,13 +629,16 @@ footer {
   }
 
   /* ABOUT ME MOBILE STYLES */
+  .what-i-do-intro {
+    background: none;
+  }
 
   .what-i-do-intro h1 {
     font-size: 35px;
   }
 
   #persona {
-    background: linear-gradient(180deg, rgba(36, 119, 191, 0.7) 0%, rgba(0, 0, 0, 0.5) 0%, rgba(36, 119, 191, 0.7) 100%);
+    background: none;
   }
   
   .persona-container {
