@@ -270,8 +270,17 @@ body {
 }
 
 .personality-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 66%;
   margin-left: 40px;
+}
+
+.traits img {
+  margin-top: 10px;
+  width: 50%;
 }
 
 .interests-container {
@@ -284,7 +293,7 @@ body {
 .what-i-do-intro {
   display: flex;
   flex-direction: column;
-  padding: 60px 40px 40px 40px;
+  padding: 60px 40px 0px 40px;
   background: linear-gradient(360deg, rgba(36, 119, 191, 0.7) 0%, rgba(0, 0, 0, 0.5) 0%, rgba(36, 119, 191, 0.7) 100%);
 }
 
@@ -293,7 +302,7 @@ body {
 }
 
 .what-i-do-intro p {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 200;
 }
 

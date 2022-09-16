@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/style.css">
     <script src="https://kit.fontawesome.com/5889a5ec9f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -67,57 +68,64 @@
             </nav>
         </header>
 
-        <p class="about-me-intro">Me, but it in user persona form.</p>
+    <!-- WHAT I DO -->
+    <div class="what-i-do-intro">
+      <h1 style="text-align:center">Me - <span style="font-weight: lighter;">but in user persona form.</span></h1>
+      <br>
+    </div>
 
     <!-- PERSONA ELEMENTS -->
     <section id="persona">
       <div class="persona-container">
 
         <div class="top-row"></div>
-          <div class="name-container">
+          <div class="name-container" data-aos="fade-right" data-aos-once="true">
             <h2 style="font-weight: lighter;">Chase McQuown</h2>
             <div class="me">
               <img src="assets/images-and-video/me.png" alt="">
             </div>
-            <p>Age: 23</p>
-            <p>Status: open to work</p>
-            <p>Location: Huntington Beach, CA</p>
+            <p>Age: <span style="font-weight: lighter;">23</span></p>
+            <p>Status: <span style="font-weight: lighter;">open to work</span></p>
+            <p>Location: <span style="font-weight: lighter;">Huntington Beach, CA</span></p>
           </div>
 
-          <div class="goals-container">
+          <div class="goals-container" data-aos="fade-left" data-aos-once="true">
             <h2 style="font-weight: lighter; margin-bottom: 10px;">Goals</h2>
             <ul>
-              <li><i class="fa-solid fa-angle-right"></i> find my space in the digital sphere</li>
-              <li><i class="fa-solid fa-angle-right"></i> continue learning in the digital sphere</li>
-              <li><i class="fa-solid fa-angle-right"></i> continue polishing my skills</li>
-              <li><i class="fa-solid fa-angle-right"></i> build meaningful connections</li>
+              <li><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> find my space in the digital sphere</li>
+              <li><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> continue learning in the digital sphere</li>
+              <li><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> continue polishing my skills</li>
+              <li><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> build meaningful connections</li>
             </ul>
           </div>
         </div>
 
         <div class="second-row">
-          <div class="personality-container">
+          <div class="personality-container" data-aos="fade-right" data-aos-once="true">
             <h2 style="font-weight: lighter;">Personality</h2>
+            <div class="traits-container">
+              <img src="assets/images-and-video/traits.png" alt="">
+            </div>
           </div>
-          <div class="interests-container">
+          <div class="interests-container" data-aos="fade-left" data-aos-once="true">
             <h2 style="font-weight: lighter; margin-bottom: 10px;">Interests</h2>
             <ul>
-              <li><i class="fa-solid fa-angle-right"></i> snowboarding</li>
-              <li><i class="fa-solid fa-angle-right"></i> skateboarding</li>
-              <li><i class="fa-solid fa-angle-right"></i> fishing</li>
-              <li><i class="fa-solid fa-angle-right"></i> hiking</li>
-              <li><i class="fa-solid fa-angle-right"></i> bodysurfing</li>
-              <li><i class="fa-solid fa-angle-right"></i> camping</li>
-              <li><i class="fa-solid fa-angle-right"></i> breaking bad</li>
-              <li><i class="fa-solid fa-angle-right"></i> better call saul</li>
-              <li><i class="fa-solid fa-angle-right"></i> spongebob</li>
-              <li><i class="fa-solid fa-angle-right"></i> the weather</li>
+              <li><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> snowboarding</li>
+              <li><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> skateboarding</li>
+              <li><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> fishing</li>
+              <li><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> hiking</li>
+              <li><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> bodysurfing</li>
+              <li><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> camping</li>
+              <li><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> breaking bad</li>
+              <li><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> better call saul</li>
+              <li><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> spongebob</li>
+              <li><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> the weather</li>
             </ul>
           </div>
         </div>
 
         <div class="bottom-row">
-          <div class="influencers-container">
+          <div class="influencers-container" data-aos="fade-up" data-aos-once="true">
             <h2 style="font-weight: lighter;">Influencers</h2>
             <div class="influencer-imgs">
               <div class="ce">
@@ -145,6 +153,12 @@
         </div>
         <div class="right-foot"><a href="https://www.linkedin.com/in/chase-mcquown-607a78198/" target="_blank"><i class="fa-brands fa-linkedin fa-5x"></i></a></div>
     </footer>
+
+    <!-- LINK TO SCROLL ANIMATIONS JS FILE -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js" type="text/javascript"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- link to javascript file -->
     <script src="assets/script.js"></script>
