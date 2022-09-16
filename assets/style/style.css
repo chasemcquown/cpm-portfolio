@@ -633,6 +633,8 @@ footer {
     margin-top: 10px;
   }
 
+  /* ABOUT ME MOBILE STYLES */
+
   /* MOBILE NAV STYLES */
 
   body .desktop-nav {
@@ -690,7 +692,7 @@ footer {
   }
 
   .burger div{
-      background-color: var(--secondary-color);
+      background-color: white;
       border-radius: 25px;
       height: 2.3px;
       transition-duration: .25s;
