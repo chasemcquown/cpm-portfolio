@@ -11,6 +11,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+  font-family: "Retro Signature";
+  src: url("../fonts/RetroSignature.otf") format("opentype"), url("../fonts/RetroSignature.otf")
+      format("opentype");
+}
+
 /* MY COLORS */
 :root {
   --secondary-color: white;
@@ -54,9 +60,9 @@ body {
 }
 
 .desktop-nav h1 {
+  font-family: 'Retro Signature';
   font-weight: lighter;
-  font-size: 36px;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-size: 40px;
 }
 
 .desktop-nav h1 a {
@@ -660,28 +666,29 @@ footer {
   }
 
   .masthead{
-      align-items: baseline;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 1.5em;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
   }
 
-  .masthead h1{
+  .masthead h1 a{
+    font-family: 'Retro Signature';
+    font-weight: lighter;
     color: white;
-      font-weight: lighter;
-      font-size: 2em;
+    font-size: 40px;
   }
 
   .main-header a{
     color: white;
-      font-family: 'Prompt', 'Sans Serif';
-      letter-spacing: 3px;
-      margin-left: 15px;
+    font-family: 'Prompt', 'Sans Serif';
+    letter-spacing: 3px;
+    margin-left: 15px;
   }
 
   .main-header a:hover,
   .active{
-      color: var(--foam);
+    color: var(--foam);
   }
 
   .burger{
