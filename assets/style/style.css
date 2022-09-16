@@ -629,6 +629,11 @@ footer {
   }
 
   /* ABOUT ME MOBILE STYLES */
+
+  .what-i-do-intro h1 {
+    font-size: 35px;
+  }
+
   #persona {
     background: linear-gradient(180deg, rgba(36, 119, 191, 0.7) 0%, rgba(0, 0, 0, 0.5) 0%, rgba(36, 119, 191, 0.7) 100%);
   }
@@ -648,7 +653,7 @@ footer {
   .name-container {
     display: flex;
     flex-direction: column;
-    /* margin-left: 40px; */
+    margin-left: 0px;
     align-items: center;
     justify-content: center;
   }
@@ -665,21 +670,17 @@ footer {
   }
   
   .goals-container {
-    /* margin-left: 15px;
-    margin-right: 40px; */
+    margin-left: 0px;
+    margin-right: 0px;
   }
   
   .personality-container, .interests-container, .influencers-container {
-    /* margin-top: 2%; */
+    margin-top: 0%;
   }
   
   .name-container, .goals-container, .personality-container, .interests-container, .influencers-container {
     width: 100%;
-    /* padding: 25px; */
-    background: rgba(0, 0, 0, 0.5);
-    border-right: 5px solid var(--secondary-color);
-    border-bottom: 5px solid var(--secondary-color);
-    transition: .7s;
+    padding: 25px;
   }
   
   .name-container h1 h2 p li, .goals-container h1 h2 p li, .personality-container h1 h2 p li, .interests-container h1 h2 p li, .influencers-container h1 h2 p li {
@@ -687,20 +688,7 @@ footer {
   }
   
   .influencers-container {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 20%;
-  }
-  
-  .influencer-imgs {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .ce img, .thrasher img, .gx1000 img {
-    width: 40%;
+    display: none;
   }
   
   .personality-container {
@@ -708,7 +696,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 0px;
   }
   
   .traits img {
@@ -717,8 +705,9 @@ footer {
   }
   
   .interests-container {
-    margin-left: 15px;
-    margin-right: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10%;
   }
   
 
