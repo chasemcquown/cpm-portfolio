@@ -62,7 +62,7 @@ body {
 .desktop-nav h1 {
   font-family: 'Retro Signature';
   font-weight: lighter;
-  font-size: 40px;
+  font-size: 45px;
 }
 
 .desktop-nav h1 a {
@@ -385,7 +385,7 @@ footer {
   color: white;
 }
 
-.left-foot p {
+.left-foot p, .left-foot a {
   color: white;
 }
 
