@@ -343,6 +343,8 @@ body {
 /* TOOLS AND TECH */
 .tools h2 {
   font-size: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .tools-tech {
@@ -657,6 +659,7 @@ footer {
   /* ABOUT ME MOBILE STYLES */
   .what-i-do-intro {
     background: none;
+    padding: 60px 25px 0px 25px;
   }
 
   .what-i-do-intro h1 {
@@ -667,6 +670,7 @@ footer {
     background: none;
   }
   
+  /* PERSONA STUFF MOBILE */
   .persona-container {
     margin-top: 2%;
     width: 100%;
@@ -739,15 +743,26 @@ footer {
     margin-bottom: 10%;
   }
 
-  /* TOOLS AND TECH */
+  /* TOOLS AND TECH MOBILE*/
   .tools h2 {
     font-size: 30px;
-    margin-right: 40px;
+    margin-right: 25px;
+    margin-left: 25px;
   }
 
   .project-heading {
     font-size: 30px;
     margin-right: 40px;
+  }
+  
+  .tools-tech {
+    margin: 0px 25px 0px 25px;
+    display: flex;
+  }
+  
+  .project-heading {
+    font-size: 30px;
+    margin: 0px 25px 0px 25px;
   }
   
 
