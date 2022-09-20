@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chase McQuown - UX/UI, Web Development, and Digital Marketing.</title>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="preload" href="../assets/style/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <script src="../assets/style/style.css" crossorigin="anonymous"></script>
     <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
     <script src="https://kit.fontawesome.com/5889a5ec9f.js" crossorigin="anonymous"></script>
@@ -71,19 +72,29 @@
 
     <!-- WHAT I DO -->
     <div class="what-i-do-intro">
-      <h1 data-aos="fade-up" data-aos-duration="500" data-aos-once="true">UX/UI Design - <span style="font-weight: lighter;">My Experience</span></h1>
+      <h1>UX/UI Design - <span style="font-weight: lighter;">My Experience</span></h1>
       <br>
-      <p data-aos="fade-up" data-aos-duration="700" data-aos-once="true">My first introduction to UX/UI design was in April of 2021 at the time of my enrollment in UT Austin's coding bootcamp. I had never heard of UX before, but I did know that UI stood for user interface, which was the full extent of my knowledge.  I didn't understand the importance of proper UX/UI design, nor did I care at the time, being that I was overwhelmed with my introduction to HTML, CSS, and JavaScript.</p>
+      <p>My first introduction to UX/UI design was in April of 2021 at the time of my enrollment in UT Austin's coding bootcamp. I had never heard of UX before, but I did know that UI stood for user interface... which was the full extent of my knowledge.  I didn't understand the importance of proper UX/UI design, nor did I care at the time, being that I was overwhelmed with my introduction to HTML, CSS, and JavaScript.</p>
       <br>
-      <p data-aos="fade-up" data-aos-duration="900" data-aos-once="true">Fast forward a year and the importance of UX/UI design became clear  during my enrollment in UT Austin’s digital marketing bootcamp. The experience a user has on your website affects the bounce rate of your site, your conversion rate(s), and even how well you rank in organic search results over time.</p>
+      <p>Fast forward a year and the importance of UX/UI design became clear  during my enrollment in UT Austin’s digital marketing bootcamp. The experience a user has on your website affects the bounce rate of your site, your conversion rate(s), and even how well you rank in organic search results over time.</p>
       <br>
-      <p style="margin-bottom: 2%;" data-aos="fade-up" data-aos-duration="1100" data-aos-once="true"><em>After realizing the impact UX/UI design has on all products (both physical goods and softwares), I found it necessary to enroll into UT Austin’s UX/UI bootcamp to deepen my UX/UI knowledge.</em></p>
-      <h1 data-aos="fade-up" data-aos-duration="500" data-aos-once="true">UX/UI Design - <span style="font-weight: lighter;">My Projects</span></h1>
+      <p><em>After realizing the impact UX/UI design has on all products (both physical goods and softwares), I found it necessary to enroll into UT Austin’s UX/UI bootcamp to deepen my UX/UI knowledge.</em></p>
+      <br>
     </div>
 
-    <!-- PROJECT ELEMENTS -->
-    <div id="my-projects" class="parent-project-container">
+    <!-- UX/UI TOOLS AND TECH -->
+    <div class="tools" style="margin-bottom: 2%;">
+      <h2 style="margin-left: 40px;">UX/UI Design - <span style="font-weight: lighter;">Tools & Tech</span></h2>
+      <br>
+      <div class="tools-tech">
+        <p><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> Qualitative & Quantitative Research Practices <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> Information Architecture & Flow </i><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> User experience Interviewing <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> Persona Creation <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> Insight Synthesis <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> Figma <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> Wireframing <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> Prototyping <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> InVision <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> Storyboarding <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> Decision Mapping <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> UI Grids & Compisition <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> Interaction Design</p>
+      </div>
+    </div>
+    <br>
 
+    <!-- PROJECT ELEMENTS -->
+    <h2 class="project-heading">UX/UI Design - <span style="font-weight: lighter;">My Projects</span></h2>
+    <div id="my-projects" class="parent-project-container">
         <div class="project">
             <div class="project-image" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
                 <img src="../assets/images-and-video/chefsy-mock.png" alt="">
@@ -118,7 +129,7 @@
           <p>Let's work.</p>
           <p>cpmcquown@gmail.com</p>
       </div>
-      <div class="right-foot"><a href="https://www.linkedin.com/in/chase-mcquown-607a78198/" target="_blank"><i class="fa-brands fa-linkedin fa-5x"></i></a></div>
+      <div class="right-foot"><a href="https://www.linkedin.com/in/chase-mcquown-607a78198/" target="_blank"><i class="fa-brands fa-linkedin fa-5x"></i></a><a href="https://github.com/chasemcquown" target="_blank" style="margin-left: 15px; margin-right: 15px;"><i class="fa-brands fa-github fa-5x"></i></a><a href=""><i class="fa-regular fa-file fa-5x"></i></a></div>
     </footer>
 
     <!-- LINK TO SCROLL ANIMATIONS JS FILE -->

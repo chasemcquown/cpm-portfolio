@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chase McQuown - UX/UI, Web Development, and Digital Marketing.</title>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="preload" href="../assets/style/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <script src="../assets/style/style.css" crossorigin="anonymous"></script>
     <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
     <script src="https://kit.fontawesome.com/5889a5ec9f.js" crossorigin="anonymous"></script>
@@ -71,14 +72,29 @@
 
 <!-- WHAT I DO -->
 <div class="what-i-do-intro">
-  <h1>Web Development - <span style="font-weight: lighter;">My Journey</span></h1>
+  <h1>Web Development - <span style="font-weight: lighter;">My Experience</span></h1>
   <br>
-  <p>coming soon...</p>
+  <p>In the early spring of 2021 I didn’t have the slightest idea of what HTML stood for… or CSS. Not only did I not not know the meaning of either, but my life was also stagnating at that point in time. I had been furloughed from my admin position at a law firm due to the pandemic. Looking back now, I’ve  realized that getting furloughed was exactly what I needed at that point in time. I was 21 and totally lost.</p>
+  <br>
+  <p>I reached out to my dad and asked him what he would do if he were in my position. He recommended I enroll in a full stack coding bootcamp. I wasn’t sure why this was his recommendation at the time, but I trusted him. I enrolled and was more anxious than I had ever been. Imposter syndrome had set in before I even touched my first line of code.</p>
+  <br>
+  <p>March of 2021 rolls around and  I’m beginning my pre-work for UT Austin’s full stack coding bootcamp. I began writing some extremely basic HTML, and fell in love when I saw things changing in my browser. At that point I probably still didn’t know what HTML stood for, but I did know that you could do some seriously cool stuff with it. As I began learning CSS and JavaScript I realized the power and importance of knowing the basics of web development. I was hooked.</p>
+  <br>
 </div>
 
-<!-- PROJECT ELEMENTS -->
-<div id="my-projects" class="parent-project-container">
+<!-- UX/UI TOOLS AND TECH -->
+<div class="tools" style="margin-bottom: 2%;">
+  <h2 style="margin-left: 40px;">Web Development - <span style="font-weight: lighter;">Tools & Tech</span></h2>
+  <br>
+  <div class="tools-tech">
+    <p><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> HTML5 <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> CSS3 </i><i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> JavaScript <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> Bootstrap <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> Express.js <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> React.js <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> Node.js <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> Command Line <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> GitHub <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> MERN <i class="fa-solid fa-angle-right" style="color: var(--secondary-color);"></i> MySQL</p>
+  </div>
+</div>
+<br>
 
+<!-- PROJECT ELEMENTS -->
+<h2 class="project-heading">Web Development - <span style="font-weight: lighter;">My Projects</span></h2>
+<div id="my-projects" class="parent-project-container">
   <div class="project">
     <div class="project-image" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
         <img src="../assets/images-and-video/barnabas-mock.png" alt="">
@@ -113,7 +129,7 @@
       <p>Let's work.</p>
       <p>cpmcquown@gmail.com</p>
   </div>
-  <div class="right-foot"><a href="https://www.linkedin.com/in/chase-mcquown-607a78198/" target="_blank"><i class="fa-brands fa-linkedin fa-5x"></i></a></div>
+  <div class="right-foot"><a href="https://www.linkedin.com/in/chase-mcquown-607a78198/" target="_blank"><i class="fa-brands fa-linkedin fa-5x"></i></a><a href="https://github.com/chasemcquown" target="_blank" style="margin-left: 15px; margin-right: 15px;"><i class="fa-brands fa-github fa-5x"></i></a><a href=""><i class="fa-regular fa-file fa-5x"></i></a></div>
 </footer>
 
 <!-- LINK TO SCROLL ANIMATIONS JS FILE -->

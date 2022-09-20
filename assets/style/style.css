@@ -340,6 +340,26 @@ body {
   text-align: center;
 }
 
+/* TOOLS AND TECH */
+.tools h2 {
+  font-size: 40px;
+}
+
+.tools-tech {
+  margin: 0px 40px 0px 40px;
+  display: flex;
+}
+
+.tools-tech p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.project-heading {
+  font-size: 40px;
+  margin: 0px 40px 0px 40px;
+}
+
 /* FOOTER STYLES */
 footer {
   display: flex;
@@ -360,6 +380,11 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   font-size: 25px;
+  color: white;
+}
+
+.left-foot p {
+  color: white;
 }
 
 .left-foot p:nth-child(1) {
@@ -635,7 +660,7 @@ footer {
   }
 
   .what-i-do-intro h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   #persona {
@@ -712,6 +737,17 @@ footer {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 10%;
+  }
+
+  /* TOOLS AND TECH */
+  .tools h2 {
+    font-size: 30px;
+    margin-right: 40px;
+  }
+
+  .project-heading {
+    font-size: 30px;
+    margin-right: 40px;
   }
   
 
