@@ -97,16 +97,17 @@ body {
   transition: .2s;
 }
 
-.desktop-nav ul li {
-  margin-right: 5px;
-}
-
 .desktop-nav nav ul li a:hover {
-  border-bottom: 2.5px solid var(--secondary-color);
+  color:  var(--foam);
 }
 
 .active-element {
   border: 2.5px solid var(--secondary-color);
+  color: white;
+}
+
+.active-element:hover {
+  color: white;
 }
 
 /* HERO STYLES */
@@ -204,11 +205,25 @@ body {
   align-items: center;
 }
 
+.persona-intro {
+  display: flex;
+  width: 90%;
+  padding: 60px 0px 40px 0px;
+}
+
+.persona-intro h1 {
+  font-size: 40px;
+}
+
 .name-container, .goals-container, .interests-container, .influencers-container {
   display: flex;
   flex-direction: column;
   width: 90%;
   padding: 20px;
+}
+
+.name-container p, .name-container h2,  .goals-container p, .goals-container h2, .interests-container p, .interests-container h2, .influencers-container p, .influencers-container h2 {
+  color: white;
 }
 
 .name-container {
@@ -230,7 +245,8 @@ body {
 
 .influencers-container {
   border-right: 5px solid var(--secondary-color);
-  margin-bottom: 200px;
+  margin-bottom: 100px;
+  text-align: right;
 }
 
 .name-container p, .goals-container p, .interests-container p, .influencers-container p {
@@ -352,6 +368,10 @@ footer {
 
 .left-foot p:nth-child(1) {
   font-weight: bold;
+}
+
+.left-foot a:hover {
+  color: var(--foam);
 }
 
 .right-foot {
@@ -626,79 +646,6 @@ footer {
   .what-i-do-intro h1 {
     font-size: 30px;
   }
-  
-  /* PERSONA STUFF MOBILE */
-  /* .persona-container {
-    margin-top: 2%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .top-row, .second-row, .bottom-row {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .name-container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .me {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .me img {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 20%;
-  }
-  
-  .goals-container {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-  
-  .personality-container, .interests-container, .influencers-container {
-    margin-top: 0%;
-  }
-  
-  .name-container, .goals-container, .personality-container, .interests-container, .influencers-container {
-    width: 100%;
-    padding: 25px;
-  }
-  
-  .name-container h1 h2 p li, .goals-container h1 h2 p li, .personality-container h1 h2 p li, .interests-container h1 h2 p li, .influencers-container h1 h2 p li {
-    color: white;
-  }
-  
-  .influencers-container {
-    display: none;
-  }
-  
-  .personality-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0px;
-  }
-  
-  .traits img {
-    margin-top: 10px;
-    width: 50%;
-  }
-  
-  .interests-container {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 10%;
-  } */
 
   /* TOOLS AND TECH MOBILE*/
   .tools h2 {
