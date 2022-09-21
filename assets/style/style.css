@@ -233,7 +233,7 @@ body {
 }
 
 .goals-container {
-  text-align: right;
+  background: linear-gradient(90deg, rgba(36,119,191,1) 0%, rgba(0,0,0,0.5) 0%, rgba(36,119,191,1) 100%);
   border-right: 5px solid var(--secondary-color);
   border-bottom: 5px solid var(--secondary-color);
 }
@@ -244,9 +244,10 @@ body {
 }
 
 .influencers-container {
+  background: linear-gradient(90deg, rgba(36,119,191,1) 0%, rgba(0,0,0,0.5) 0%, rgba(36,119,191,1) 100%);
   border-right: 5px solid var(--secondary-color);
+  border-bottom: 5px solid var(--secondary-color);
   margin-bottom: 100px;
-  text-align: right;
 }
 
 .name-container p, .goals-container p, .interests-container p, .influencers-container p {
@@ -270,11 +271,13 @@ body {
   background: linear-gradient(360deg, rgba(36, 119, 191, 0.7) 0%, rgba(0, 0, 0, 0.5) 0%, rgba(36, 119, 191, 0.7) 100%);
 }
 
-.what-i-do-intro h1 {
+.what-i-do-intro h1, .what-i-do-intro h1 span {
+  color: white;
   font-size: 40px;
 }
 
 .what-i-do-intro p {
+  color: white;
   font-size: 20px;
   font-weight: 200;
 }
@@ -385,7 +388,6 @@ footer {
 
 .right-foot i:hover {
   color: var(--foam);
-  transition-delay: 0.1s;
 }
 
 /* BUTTON STYLES */
@@ -641,6 +643,24 @@ footer {
   .what-i-do-intro {
     background: none;
     padding: 60px 25px 0px 25px;
+  }
+  
+  .persona-intro h1, .persona-intro h1 span {
+    color: white;
+    font-size: 30px;
+  }
+  
+  .name-container p, .goals-container p, .interests-container p, .influencers-container p {
+    font-size: 16px;
+  }
+  
+  .name-container img {
+    width: 50%;
+  }
+  
+  .influencer-imgs img {
+    text-align: center;
+    width: 30%;
   }
 
   .what-i-do-intro h1 {
