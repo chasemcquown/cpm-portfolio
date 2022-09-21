@@ -94,10 +94,19 @@ body {
   padding: 10px 15px;
   font-size: 1.55vw;
   font-weight: 200;
+  transition: .2s;
+}
+
+.desktop-nav ul li {
+  margin-right: 5px;
 }
 
 .desktop-nav nav ul li a:hover {
-  color: var(--foam);
+  border-bottom: 2.5px solid var(--secondary-color);
+}
+
+.active-element {
+  border: 2.5px solid var(--secondary-color);
 }
 
 /* HERO STYLES */
