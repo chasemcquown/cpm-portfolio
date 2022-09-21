@@ -653,6 +653,10 @@ footer {
   .name-container p, .goals-container p, .interests-container p, .influencers-container p {
     font-size: 16px;
   }
+
+  .goals-container, .influencers-container {
+    background: none;
+  }
   
   .name-container img {
     width: 50%;
