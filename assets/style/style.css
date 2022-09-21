@@ -198,100 +198,52 @@ body {
 }
 
 /* ABOUT ME */
-
-#persona {
-  background: linear-gradient(180deg, rgba(36, 119, 191, 0.7) 0%, rgba(0, 0, 0, 0.5) 0%, rgba(36, 119, 191, 0.7) 100%);
+.persona-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.persona-container {
-  margin-top: 2%;
-  width: 100%;
+.name-container, .goals-container, .interests-container, .influencers-container {
   display: flex;
-}
-
-.top-row, .second-row, .bottom-row {
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px;
 }
 
 .name-container {
-  display: flex;
-  flex-direction: column;
-  width: 66%;
-  margin-left: 40px;
-  align-items: center;
-  justify-content: center;
-}
-
-.me {
-  display: flex;
-  justify-content: center;
-}
-
-.me img {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 20%;
+  border-left: 5px solid var(--secondary-color);
+  border-bottom: 5px solid var(--secondary-color);
+  margin-bottom: 0px;
 }
 
 .goals-container {
-  width: 33%;
-  margin-left: 15px;
-  margin-right: 40px;
-}
-
-.personality-container, .interests-container, .influencers-container {
-  margin-top: 2%;
-}
-
-.name-container, .goals-container, .personality-container, .interests-container, .influencers-container {
-  padding: 25px;
-  background: rgba(0, 0, 0, 0.5);
+  text-align: right;
   border-right: 5px solid var(--secondary-color);
   border-bottom: 5px solid var(--secondary-color);
-  transition: .7s;
-}
-
-.name-container h1 h2 p li, .goals-container h1 h2 p li, .personality-container h1 h2 p li, .interests-container h1 h2 p li, .influencers-container h1 h2 p li {
-  color: white;
-}
-
-.influencers-container {
-  width: 99%;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-bottom: 20%;
-}
-
-.influencer-imgs {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.ce img, .thrasher img, .gx1000 img {
-  width: 40%;
-}
-
-.personality-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 66%;
-  margin-left: 40px;
-}
-
-.traits img {
-  margin-top: 10px;
-  width: 50%;
 }
 
 .interests-container {
-  width: 33%;
-  margin-left: 15px;
-  margin-right: 40px;
+  border-left: 5px solid var(--secondary-color);
+  border-bottom: 5px solid var(--secondary-color);
+}
+
+.influencers-container {
+  border-right: 5px solid var(--secondary-color);
+  margin-bottom: 200px;
+}
+
+.name-container p, .goals-container p, .interests-container p, .influencers-container p {
+  font-size: 20px;
+}
+
+.name-container img {
+  width: 30%;
+}
+
+.influencer-imgs img {
+  text-align: center;
+  width: 20%;
 }
 
 /* WHAT I DO */
@@ -674,13 +626,9 @@ footer {
   .what-i-do-intro h1 {
     font-size: 30px;
   }
-
-  #persona {
-    background: none;
-  }
   
   /* PERSONA STUFF MOBILE */
-  .persona-container {
+  /* .persona-container {
     margin-top: 2%;
     width: 100%;
     display: flex;
@@ -750,7 +698,7 @@ footer {
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 10%;
-  }
+  } */
 
   /* TOOLS AND TECH MOBILE*/
   .tools h2 {
