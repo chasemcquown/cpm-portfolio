@@ -644,6 +644,14 @@ footer {
     background: none;
     padding: 60px 25px 0px 25px;
   }
+
+  .influencers-container {
+    display: none;
+  }
+
+  .interests-container {
+    border-bottom: 0px;
+  }
   
   .persona-intro h1, .persona-intro h1 span {
     color: white;
