@@ -101,13 +101,43 @@ body {
   color:  var(--foam);
 }
 
-.active-element {
-  border: 2.5px solid var(--secondary-color);
-  color: white;
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-.active-element:hover {
+.dropdown .dropbtn {
+  font-size: 20px;  
+  font-weight: 200;
+  border: none;
+  outline: none;
   color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border: 2.5px solid var(--secondary-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* HERO STYLES */
